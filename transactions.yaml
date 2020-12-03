@@ -1,0 +1,38 @@
+input_features:
+  -
+    name: customer_id
+    type: category
+  -
+    name: card_id
+    type: category
+  -
+    name: merchant_id
+    type: category
+  -
+    name: merchant_category
+    type: category
+  -
+    name: merchant_zipcode
+    type: category
+  -
+    name: transaction_amount
+    type: numerical
+  -
+    name: authorization_response_code
+    type: category
+  -
+    name: atm_network_xid
+    type: category
+  -
+    name: cvv_2_response_xflg
+    type: category
+
+combiner:
+    type: concat
+    num_fc_layers: 1
+    fc_size: 48
+
+output_features:
+  -
+    name: fraud_label
+    type: binary

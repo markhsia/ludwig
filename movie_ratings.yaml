@@ -1,0 +1,18 @@
+input_features:
+    -
+        name: year
+        type: numerical
+    -
+        name: duration
+        type: numerical
+    -
+        name: nominations
+        type: numerical
+    -
+        name: categories
+        type: set
+
+output_features:
+    -
+        name: rating
+        type: numerical

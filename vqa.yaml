@@ -1,0 +1,20 @@
+input_features:
+    -
+        name: image_path
+        type: image
+        encoder: stacked_cnn
+    -
+        name: question
+        type: text
+        level: word
+        encoder: parallel_cnn
+
+output_features:
+    -
+        name: answer
+        type: text
+        level: word
+        decoder: generator
+        cell_type: lstm
+        loss:
+            type: sampled_softmax_cross_entropy

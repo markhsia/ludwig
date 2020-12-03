@@ -1,0 +1,21 @@
+input_features:
+    -
+        name: timeseries_data
+        type: timeseries
+
+output_features:
+    -
+        name: y1
+        type: numerical
+    -
+        name: y2
+        type: numerical
+    -
+        name: y3
+        type: numerical
+    -
+        name: y4
+        type: numerical
+    -
+        name: y5
+        type: numerical

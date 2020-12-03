@@ -1,0 +1,4 @@
+sentence,chunks,part_of_speech,named_entities
+San Francisco is very foggy,B-NP I-NP B-VP B-ADJP I-ADJP,NNP NNP VBZ RB JJ,B-Loc I-Loc O O O
+My dog likes eating sausage,B-NP I-NP B-VP B-VP B-NP,PRP NN VBZ VBG NN,O O O O O
+Brutus Killed Julius Caesar,B-NP B-VP B-NP I-NP,NNP VBD NNP NNP,B-Per O B-Per I-Per
